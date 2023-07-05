@@ -1,0 +1,233 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+:root {
+    --dark-background: #1f2937;
+    --main-text: #f9faf8; /* This is gray background */
+    --second-color: #e5e7eb;
+    --button-color: #3882f6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#home {
+    height: 100%;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links {
+    color: var(--second-color);
+    list-style: none;
+    flex: 5 2 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7em;
+    margin: auto;
+}
+
+.nav-links li {
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links li:hover {
+    opacity: 50%;
+}
+
+nav h3 {
+    color: var(--main-text);
+    justify-content: flex-start;
+    padding-left: 125px;
+    font-size: 40px;
+}
+
+
+/* main section of home section */
+.main-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-text);
+    text-align: center;
+    padding-top: 100px;
+    width: 75%;
+    margin: auto;
+}
+
+header {
+    font-size: 125px;
+    text-decoration: none;
+}
+
+header:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
+.section-one {
+    flex-direction: column;
+    flex: 1;
+    /* if display: flex; would be added, then some errors would be caused, espeically the button */
+}
+
+.section-one button {
+    background-color: var(--button-color);
+    color: var(--main-text);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 20px; /* Top and bototm - Right and left */
+}
+
+.section-two {
+    flex: 1;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.section-two img {
+    max-width: 75%;
+    max-height: 75%;
+    opacity: 75%;
+}
+
+/* Section Two */
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    background-color: #e7e3db;
+}
+
+#info h3 {
+    font-size: 55px;
+    color: var(--dark-background);
+    font-style: extra-bold;
+}
+
+.img-group {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.square {
+    flex: 1;
+    margin: 0 15px;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-group {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-square {
+    text-align: center;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.info-square p {
+    font-size: 30px;
+}
+
+/* Section Three */
+/* This section should contain a gray background */
+#quote {
+    background-image: url(oil-gd7b5edd14_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#quote p {
+    font-size: 55px;
+    color: var(--main-text);
+}
+
+#contact {
+    background-color: #e7e3db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.forest {
+    width: 80%;
+    height: 70%;
+    background-image: url(bluebonnets-g5a8f9f73c_1280.jpg);
+    border-radius: 10px;
+}
+
+.forest-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.forest-info p {
+    font-size: 60px;
+    margin: 5px;
+}
+
+footer {
+    background-color: #e7e3db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+
+footer p {
+    height: 100%;
+}
